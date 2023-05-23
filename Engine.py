@@ -2,6 +2,8 @@
 import random
 import os
 import sys
+import itertools
+
 
 #Setting directory
 os.chdir(os.path.dirname(sys.argv[0]))
@@ -84,3 +86,17 @@ def deal_dmg_to(*args, dmg):
             dmg = 0
             break
 
+
+
+# Function to calculate the average dmg on attack with multiple dice.
+
+def Multiple_attack_avg_dmg(*values):
+    dice_values = values
+    num_dice = len(values)
+    
+    all_throws = itertools.product(*[range(1, dice_value + 1) for dice_value in dice_values])
+    max_results = [max(throw) for throw in all_throws]
+    sum_max_results = sum(max_results)
+    num_throws = len(max_results)
+    
+    return sum_max_results / num_throws
