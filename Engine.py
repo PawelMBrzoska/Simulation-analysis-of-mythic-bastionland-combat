@@ -90,9 +90,9 @@ def deal_dmg_to(*args, dmg):
 
 # Function to calculate the average dmg on attack with multiple dice.
 
-def Multiple_attack_avg_dmg(*values):
-    dice_values = values
-    num_dice = len(values)
+def Multiple_attack_avg(dice_sides):
+    dice_values = [int(value.strip()) for value in dice_sides.split(",")]
+    num_dice = len(dice_values)
     
     all_throws = itertools.product(*[range(1, dice_value + 1) for dice_value in dice_values])
     max_results = [max(throw) for throw in all_throws]

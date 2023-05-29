@@ -23,7 +23,7 @@ This has specific consequences for the logic of group combat:
 
 And all of this is fair and balanced; however, at the group/warband level, it seems odd to me that outflanking the enemy, which is the most basic tactic for winning in warfare, is now unoptimal. In a series of simulations, it turns out that a bonus to souronding (problably +d8) could balance it, but it is weirdly distributed - it helps in fights between small dmg groups or between groups with big armor. 
 
-I have not found a solution yet.
+My innitial sollution is to give the armor to all groups. A1 for Conscripts, and A2 for Mercenaries.
 
 ---
 
