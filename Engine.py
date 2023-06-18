@@ -3,6 +3,7 @@ import random
 import os
 import sys
 import itertools
+from icepool import d
 
 
 #Setting directory
